@@ -1,6 +1,6 @@
-import { Hero } from '../models/hero';
+import { Student } from '../models';
 
-export const Heroes: Hero[] = [
+export const Students: Student[] = [
   { id: 1, quirk: 'One For All', name: 'All Might' },
   { id: 2, quirk: 'Clones', name: 'Ectoplasm' },
   { id: 3, quirk: 'Hydrokinesis', name: 'Backdraft' },

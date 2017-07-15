@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
 
 // models
-import { Hero } from '../models/hero';
-import { HEROES } from '../mocks/heroes';
+import { Hero } from '../models';
+import { Heroes } from '../mocks';
 
 @Injectable()
 export class HeroService {
   heroes: Hero[];
 
   getAll(): Promise<Hero[]> {
-    return Promise.resolve(HEROES);
+    return Promise.resolve(Heroes);
   }
 
   getSingle(id: number): Promise<Hero> {
